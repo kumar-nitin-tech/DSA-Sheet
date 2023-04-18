@@ -29,39 +29,29 @@ void Permutation(vector<int> &nums, vector<vector<int>> &ans, int idx){
 }
 
 void nextPermutation(vector<int>&nums){
-    vector<int> temp = nums;
-    //sort(nums.begin(), nums.end());
+   vector<vector<int>> ans;
+   int idx = 0;
+   Permutation(nums, ans, idx);
+   sort(ans.begin(), ans.end());
 
-    vector<vector<int>> ans;
-    Permutation(nums, ans, 0);
 
-    sort(ans.begin(), ans.end());
-    for(auto i:ans){
-        for(auto j:i){
-            cout<<j<<" ";
-        }
-        cout<<endl;
-    }
-    int index = 0;
-    for(int i=0;i<ans.size(); i++){
-        if(ans[i]== temp){
+   int index = -1;
+   for(int i=ans.size()-2; i>=0;i--){
+        if(ans[i] == nums){
             index = i;
             break;
         }
-    }
-    
-    if(index+1 == ans.size()){
-        sort(nums.begin(), nums.end());
-        for(auto i:nums){
+   }
+   if(index == ans.size()-1){
+        for(auto i: ans[0]){
             cout<<i<<" ";
         }
+   }
+   else{
+    for(auto i: ans[index+1]){
+        cout<<i<<" ";
     }
-    else{
-        for(auto i:ans[index+1]){
-            cout<<i<<" ";
-        }
-    }
-   
+   }
 }
 
 void nextpermutation(vector<int> &nums){
@@ -101,9 +91,6 @@ int main(){
     for(auto &i:nums){
         cin>>i;
     }
-    next_permutation(nums.begin(), nums.end());
-    for(auto i:nums){
-        cout<<i<<" ";
-    }
+    nextPermutation(nums);
     return 0;
 }
