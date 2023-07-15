@@ -1,0 +1,1 @@
+{"name":"Local: buyAndSellStocks","url":"d:\\Coding\\DSA Sheet\\Array\\buyAndSellStocks.cpp","tests":[{"id":1682157115064,"input":"6\n7 1 5 3 6 4","output":""},{"id":1684125517759,"input":"5\n7 6 4 3 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\DSA Sheet\\Array\\buyAndSellStocks.cpp","group":"local","local":true}
