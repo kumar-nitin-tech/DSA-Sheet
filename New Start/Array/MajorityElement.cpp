@@ -15,8 +15,8 @@
 using namespace std;
 
 //Brute Force 
-//TC:
-//SC:
+//TC:   O(n^2)
+//SC:   O(1)
 int majorityElementB(int n, vector<int> &arr){
     int count = 0;
     for(int i=0; i<n; i++){
@@ -34,8 +34,8 @@ int majorityElementB(int n, vector<int> &arr){
 }
 
 //Better Approach (Using Hashmap)
-//TC:
-//SC:
+//TC:   O(n)
+//SC:   O(n)
 int majorityElementBetter(int n, vector<int> &arr){
     unordered_map<int,int> map;
     for(auto &i:arr){
@@ -51,8 +51,8 @@ int majorityElementBetter(int n, vector<int> &arr){
 }
 
 //Optimal Approach
-//TC:
-//SC:
+//TC:   O(2n)
+//SC:   O(1)
 int majorityElementO(int n, vector<int> &arr){
     //Moore's voting Algorithm
     int count = 0;
