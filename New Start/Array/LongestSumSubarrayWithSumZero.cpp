@@ -15,8 +15,8 @@
 using namespace std;
 
 //Brute Force
-//TC:
-//SC:
+//TC: O(N^2)
+//SC: O(1)
 int longestSubArrayWithSumZeroBrute(vector<int> &arr){
     int longestSubaaray = 0;
     int n = arr.size();
@@ -33,8 +33,8 @@ int longestSubArrayWithSumZeroBrute(vector<int> &arr){
 }
 
 //Optimal Approach
-//TC:
-//SC:
+//TC: O(N log N)
+//SC: O(N)
 int longestSubArrayWithSumZeroOptimal(vector<int> &arr){
     //Mantaining a prefix sum
     int prefixSum = 0;
