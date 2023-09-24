@@ -26,7 +26,7 @@ int longestConsecutiveSequenceBrute(vector<int> &arr){
     int longestSeq = 1;
     for(int i=0; i<arr.size(); i++){
         int x = arr[i];
-        int count = 1;
+        int count = 1; 
         while(searchElement(x+1,arr)){
             x = x+1;
             count++;
