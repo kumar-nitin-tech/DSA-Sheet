@@ -49,9 +49,10 @@ int main(){
     cin>>n;
     vector<int> arr(n);
     for(auto &i:arr)    cin>>i;
-    cout<<removeDuplicateFromSortArrayOptimal(arr)<<endl;
-    for(auto i:arr){
-        cout<<i<<" ";
+    int k = removeDuplicateFromSortArrayOptimal(arr);
+    cout<<k<<endl;
+    for(int i =0; i<k; i++){
+        cout<<arr[i]<<" ";
     }
     return 0;
 }
