@@ -24,8 +24,8 @@ bool cmp(Job a, Job b){
     return a.profit>b.profit;
 }
 //Optimal Approach
-//TC: 
-//SC:
+//TC: O(N log N) + O(N*M)
+//SC:   O(M)
 vector<int> jobSequencing(vector<Job> &jobs){
     //Idea is to sort the array of jobs in descending order of the profit to have maximumm profit 
     int n = jobs.size();
