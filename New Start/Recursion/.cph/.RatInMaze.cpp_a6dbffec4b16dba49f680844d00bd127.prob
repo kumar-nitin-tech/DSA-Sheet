@@ -1,0 +1,1 @@
+{"name":"Local: RatInMaze","url":"d:\\Coding\\DSA Sheet\\New Start\\Recursion\\RatInMaze.cpp","tests":[{"id":1716145309199,"input":"4\n1 0 0 0 \n1 1 0 1\n1 1 0 0 \n0 1 1 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\DSA Sheet\\New Start\\Recursion\\RatInMaze.cpp","group":"local","local":true}

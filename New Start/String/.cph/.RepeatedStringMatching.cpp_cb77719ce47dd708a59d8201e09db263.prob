@@ -1,0 +1,1 @@
+{"name":"Local: RepeatedStringMatching","url":"d:\\Coding\\DSA Sheet\\New Start\\String\\RepeatedStringMatching.cpp","tests":[{"id":1728798751368,"input":"abcd\ncdabcdab","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\DSA Sheet\\New Start\\String\\RepeatedStringMatching.cpp","group":"local","local":true}

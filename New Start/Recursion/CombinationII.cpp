@@ -45,7 +45,7 @@ vector<vector<int>> combinationSum(vector<int> &arr, int target){
 
 //Optimal Approach : We combine the no duplicate subset and combination sum method to get unique subset sum
 //TC:   O(2^N) + O(N log N)
-//SC:   O(N)
+//SC:   O(N)    
 void combinationSumOptimalHelper(vector<int> &arr, vector<vector<int>> &ans, vector<int> &temp, int ind, int target){
     if(target == 0){
         ans.push_back(temp);

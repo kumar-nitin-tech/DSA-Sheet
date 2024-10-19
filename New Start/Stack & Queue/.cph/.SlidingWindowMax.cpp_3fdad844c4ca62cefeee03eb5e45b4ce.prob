@@ -1,0 +1,1 @@
+{"name":"Local: SlidingWindowMax","url":"d:\\Coding\\DSA Sheet\\New Start\\Stack & Queue\\SlidingWindowMax.cpp","tests":[{"id":1722194412027,"input":"8 3\n1 3 -1 -3 5 3 6 7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\DSA Sheet\\New Start\\Stack & Queue\\SlidingWindowMax.cpp","group":"local","local":true}

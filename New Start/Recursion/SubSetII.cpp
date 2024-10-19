@@ -47,12 +47,12 @@ vector<vector<int>> subSetBrute(vector<int> &arr){
 //Optimal approach
 //TC: O(n log n) + O(2^N * N)
 //SC: O(N)
-void subsetRecursionHelper(vector<int> &temp, vector<vector<int>> &ans, int ind, int n, vector<int> &arr){
+void subsetRecursionHelper(vector<int> temp, vector<vector<int>> &ans, int ind, int n, vector<int> &arr){
     ans.push_back(temp);
     for(int i=ind; i<n; i++){
         if(ind != i && arr[i] == arr[i-1])  continue;
         temp.push_back(arr[i]);
-        subsetRecursionHelper(temp,ans,i+1,n,arr);
+        subsetRecursionHelper(temp,ans,ind+1,n,arr);
         temp.pop_back();
     }
 }
